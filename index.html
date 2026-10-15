@@ -138,6 +138,13 @@ footer{padding:60px 0 80px;border-top:1px solid var(--line);text-align:center;co
 .pdetail{border-top:1px solid var(--line)}
 .backtop{margin-top:22px;font-size:13.5px}
 select.jump{background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:9px 12px;font-family:var(--sans);font-size:14px;margin-top:20px}
+.tablewrap{overflow-x:auto;margin-top:22px}
+table.tq{width:100%;border-collapse:collapse;font-size:14.5px;min-width:520px}
+table.tq th,table.tq td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+table.tq th{color:var(--accent);font-family:var(--sans);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase}
+table.tq td.nm{color:var(--accent2);font-weight:700;white-space:nowrap}
+table.tq tbody tr:hover td{background:var(--panel)}
+.note{background:rgba(255,122,26,.08);border:1px solid rgba(255,122,26,.35);border-radius:12px;padding:14px 16px;margin-top:18px;color:var(--text);font-size:14.5px}
 </style>
 </head>
 <body id="top">
@@ -149,6 +156,7 @@ select.jump{background:var(--panel2);color:var(--text);border:1px solid var(--li
     <a class="lnk" href="#support">Support Chain</a>
     <a class="lnk" href="#teardown">Teardown</a>
     <a class="lnk" href="#parts-index">Parts</a>
+    <a class="lnk" href="#workshop">Workshop</a>
     <a class="lnk" href="#tools">Tools</a>
   </div>
 </div></nav>
@@ -593,10 +601,22 @@ select.jump{background:var(--panel2);color:var(--text);border:1px solid var(--li
   </div>
 </section>
 
+<section id="workshop">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="num-badge">CHAPTER 05 &middot; WORKSHOP</div>
+      <h2 class="sec">Torque Values</h2>
+      <p class="lead">ஒவ்வொரு bolt-ஐயும் சரியான force-ல் tighten பண்ணணும் — கம்மியா இருந்தா loose ஆகும், அதிகமா இருந்தா thread அல்லது carbon part damage ஆகும். Beginners-க்கு இது தான் மிக முக்கியமான table.</p>
+    </div>
+    <div class="tablewrap reveal"><table class="tq"><thead><tr><th>Bolt / Component</th><th>Torque</th><th>Note</th></tr></thead><tbody><tr><td>Stem — face plate bolts</td><td class="nm">5–6 Nm</td><td class="muted">4 bolts, star pattern-ல் சீரா tighten.</td></tr><tr><td>Stem — steerer clamp bolts</td><td class="nm">5–6 Nm</td><td class="muted">Handlebar straight-ஆ இருக்கும்போது tighten.</td></tr><tr><td>Saddle rail clamp bolt</td><td class="nm">12–15 Nm</td><td class="muted">Manufacturer marking பாருங்க — carbon-க்கு கம்மி.</td></tr><tr><td>Seatpost clamp bolt</td><td class="nm">5–7 Nm</td><td class="muted">Carbon seatpost-க்கு max ~5 Nm.</td></tr><tr><td>Crank bolts (square taper)</td><td class="nm">35–45 Nm</td><td class="muted">Crank puller-ஓட install.</td></tr><tr><td>Crank arm pinch bolts (splined)</td><td class="nm">12–15 Nm</td><td class="muted">இரண்டு bolts-ஐயும் evenly.</td></tr><tr><td>Pedal into crank arm</td><td class="nm">35–40 Nm</td><td class="muted">Left pedal = reverse thread.</td></tr><tr><td>Chainring bolts</td><td class="nm">8–10 Nm</td><td class="muted">Evenly, star pattern.</td></tr><tr><td>Bottom bracket cups</td><td class="nm">35–50 Nm</td><td class="muted">Threaded-க்கு; press-fit வேறு முறை.</td></tr><tr><td>Cassette lockring</td><td class="nm">40 Nm</td><td class="muted">Chain whip-ஓட hold பண்ணி.</td></tr><tr><td>Brake caliper mounting bolts</td><td class="nm">6–8 Nm</td><td class="muted">Align பண்ணிய பிறகு.</td></tr><tr><td>Disc rotor bolts</td><td class="nm">6 Nm</td><td class="muted">Star pattern-ல்.</td></tr><tr><td>Brake cable / pad clamp bolt</td><td class="nm">5–7 Nm</td><td class="muted">Cable tension set பண்ணிய பிறகு.</td></tr><tr><td>Derailleur cable clamp bolt</td><td class="nm">5–7 Nm</td><td class="muted">Indexing-க்கு முன்.</td></tr><tr><td>Rear derailleur mounting bolt</td><td class="nm">8–10 Nm</td><td class="muted">Frame hanger-க்கு.</td></tr><tr><td>Thru-axle / Quick-release axle</td><td class="nm">10–15 Nm (thru)</td><td class="muted">QR-ஐ hand-tight மட்டும்.</td></tr><tr><td>Water bottle cage bolts</td><td class="nm">3 Nm</td><td class="muted">அதிகம் இல்லை — frame-ஐ crack ஆக்கும்.</td></tr></tbody></table></div>
+    <div class="note reveal">⚠️ இந்த values ஒரு general guide மட்டும். ஒவ்வொரு manufacturer-ம் வேற value சொல்லலாம் — எப்பவும் part-இல் print ஆகியிருக்கிற torque value-ஐ அல்லது official manual-ஐ follow பண்ணுங்க. Tightening-க்கு ஒரு calibrated torque wrench use பண்ணுங்க.</div>
+  </div>
+</section>
+
 <section id="tools">
   <div class="wrap">
     <div class="reveal">
-      <div class="num-badge">CHAPTER 05</div>
+      <div class="num-badge">CHAPTER 06</div>
       <h2 class="sec">Tools, Glossary &amp; Common Mistakes</h2>
     </div>
     <div class="two">
