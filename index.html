@@ -145,6 +145,14 @@ table.tq th{color:var(--accent);font-family:var(--sans);font-size:11.5px;letter-
 table.tq td.nm{color:var(--accent2);font-weight:700;white-space:nowrap}
 table.tq tbody tr:hover td{background:var(--panel)}
 .note{background:rgba(255,122,26,.08);border:1px solid rgba(255,122,26,.35);border-radius:12px;padding:14px 16px;margin-top:18px;color:var(--text);font-size:14.5px}
+.chklist{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}
+.chk{display:flex;gap:12px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px;cursor:pointer;transition:.2s}
+.chk:hover{border-color:var(--accent)}
+.chk input{width:20px;height:20px;accent-color:var(--accent);margin-top:3px;flex:none;cursor:pointer}
+.chk span{color:var(--muted);font-size:14px}
+.chk b{display:block;font-size:15.5px;color:var(--text);margin-bottom:3px}
+.chk input:checked + span{opacity:.5;text-decoration:line-through}
+@media(max-width:720px){.chklist{grid-template-columns:1fr}}
 </style>
 </head>
 <body id="top">
@@ -617,6 +625,14 @@ table.tq tbody tr:hover td{background:var(--panel)}
       <p class="lead">பொதுவா வர்ற பிரச்சனைகள் — <b>symptom &#8594; likely cause &#8594; fix</b>. முதல்ல இதை பாருங்க, அப்புறம் அந்த part-இன் section-க்கு போங்க.</p>
     </div>
     <div class="tablewrap reveal"><table class="tq"><thead><tr><th>Symptom</th><th>Likely cause</th><th>Fix</th></tr></thead><tbody><tr><td>Gear shift ஆகலை / chain skip ஆகுது</td><td class="muted">Cable tension அல்லது indexing சரியில்லை</td><td>Indexing adjust பண்ணுங்க; barrel adjuster-ஐ quarter-turn rotate.</td></tr><tr><td>Ride-ல் chain drop ஆகுது</td><td class="muted">Derailleur limit screws அல்லது bent hanger</td><td>H / L limit screws set பண்ணுங்க; hanger-ஐ straighten.</td></tr><tr><td>Brake weak / spongy-ஆ இருக்கு</td><td class="muted">Worn pads, cable stretch, அல்லது hydraulic-ல் air</td><td>Pads replace; cable tension; hydraulic-ஆனா bleed.</td></tr><tr><td>Brake-ல் squeal / screech சத்தம்</td><td class="muted">Contaminated pads / rotor, misaligned caliper</td><td>Rotor-ஐ alcohol-ஆல் clean; caliper align; pads replace.</td></tr><tr><td>Wheel ஆடுது (wobble)</td><td class="muted">Loose spokes அல்லது bent rim</td><td>Spoke tension set; wheel-ஐ true பண்ணுங்க.</td></tr><tr><td>Pedal சுத்தும்போது கீச்சு சத்தம்</td><td class="muted">Dry chain, worn BB, அல்லது loose crank</td><td>Chain lube; BB check; crank bolts-ஐ torque-க்கு tight.</td></tr><tr><td>Steering stiff அல்லது wobbly</td><td class="muted">Headset preload சரியில்லை</td><td>Headset-ஐ சரியா adjust (preload) பண்ணுங்க.</td></tr><tr><td>Tire அடிக்கடி air போகுது</td><td class="muted">Puncture, valve leak, அல்லது old tube</td><td>Tube-ஐ patch / replace; valve check.</td></tr><tr><td>Coast செய்யும்போது wheel சுத்தலை</td><td class="muted">Freehub-ல் பிரச்சனை</td><td>Freehub-ஐ clean + grease, இல்லை replace.</td></tr><tr><td>Seatpost slip ஆகுது</td><td class="muted">Clamp loose அல்லது post-ல் grease</td><td>Clamp-ஐ torque-க்கு tight; post-ஐ clean (grease நீக்குங்க).</td></tr></tbody></table></div>
+
+    <div class="reveal" style="margin-top:70px">
+      <div class="num-badge">CHAPTER 05 &middot; WORKSHOP</div>
+      <h2 class="sec">Pre-ride Safety Checklist</h2>
+      <p class="lead">Ride-க்கு போகுறதுக்கு முன் இதை ஒவ்வொண்ணா tick பண்ணுங்க. ஏதாவது loose-ஆ இருந்தா, அதோட part section-க்கு போய் fix பண்ணுங்க.</p>
+    </div>
+    <div class="chklist reveal"><label class="chk"><input type="checkbox"><span><b>Brakes</b>Lever-ஐ அழுத்தி பாருங்க — pads rim / disc-ஐ grip பண்ணுதா? Cable tension சரியா?</span></label><label class="chk"><input type="checkbox"><span><b>Tires & pressure</b>Sidewall-ல் இருக்கிற recommended pressure check பண்ணுங்க; தட்டையா இல்லைனு பாருங்க.</span></label><label class="chk"><input type="checkbox"><span><b>Quick-release / Thru-axle</b>Wheel axle முழுசா tight-ஆ இருக்கா? QR-ஐ சரியா close பண்ணியிருக்கீங்களா?</span></label><label class="chk"><input type="checkbox"><span><b>Wheels spin</b>Wheel-ஐ சுத்தி பாருங்க — wobble, rubbing, அல்லது கீச்சு சத்தம் இல்லையா?</span></label><label class="chk"><input type="checkbox"><span><b>Headset & stem</b>Front brake-ஐ hold பண்ணி bike-ஐ முன்னும் பின்னும் ஆட்டுங்க — handlebar loose இல்லையா?</span></label><label class="chk"><input type="checkbox"><span><b>Saddle & seatpost</b>Saddle height சரியா? Seatpost clamp tight-ஆ?</span></label><label class="chk"><input type="checkbox"><span><b>Chain</b>Chain சுத்தமா, lube போட்டிருக்கா? Too dry-ஆ இல்லையா?</span></label><label class="chk"><input type="checkbox"><span><b>Gears</b>ஒவ்வொரு gear-ஆ shift பண்ணி பாருங்க — சரியா மாறுதா, noise இல்லையா?</span></label><label class="chk"><input type="checkbox"><span><b>Lights & bell</b>Front / rear light வேலை செய்யுதா? Bell இருக்கா?</span></label><label class="chk"><input type="checkbox"><span><b>Helmet</b>Helmet fit சரியா, strap tight-ஆ? Ride-க்கு முன் இது தான் முதல் step.</span></label></div>
+    <div class="note reveal">⏱️ ஒவ்வொரு ride-க்கும் முன் 2 நிமிடம் இதை check பண்ணுங்க. Safety-க்கு இது தான் மிக சின்ன, ஆனா மிக முக்கியமான பழக்கம்.</div>
   </div>
 </section>
 
